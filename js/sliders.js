@@ -6,7 +6,16 @@ const mainSliderOptions = {
   keyboard: {
     enabled: true,
   },
-  allowTouchMove: false,
+  on: {
+    touchEnd: function (e) {
+      const currentSlide = this.activeIndex;
+      const totalSlides = this.slides.length;
+
+      if (currentSlide === totalSlides - 1 && e.swipeDirection === 'next') {
+        this.allowSlideNext = false;
+      }
+    },
+  },
   pagination: {
     el: '.main-slider__pagination.swiper-pagination',
     clickable: true,
