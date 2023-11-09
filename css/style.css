@@ -159,7 +159,7 @@ main {
 }
 
 .bg__img {
-  background-image: url(/images/bg3.jpg);
+  background-image: url(../images/bg3.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -730,7 +730,7 @@ main {
 }
 
 .directions {
-  background: url(/images/map1.jpg) center no-repeat no-repeat #090909;
+  background: url(../images/map.jpg) center no-repeat no-repeat #090909;
   background-position-y: clamp(4rem, 1.7vw, 3.125rem);
   background-size: clamp(61.125rem, 150vw, 87.5rem);
   min-height: clamp(39.375rem, 94vw, 54.375rem);
@@ -997,7 +997,7 @@ main {
 }
 
 .contact-form {
-  background: url(/images/bg1.jpg) bottom no-repeat;
+  background: url(../images/bg1.jpg) bottom no-repeat;
   background-size: cover;
   padding: 3.4375rem 0;
   position: relative;
@@ -1383,7 +1383,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/images/main-slider/01.jpg) center no-repeat;
+  background: url(../images/main-slider/01.jpg) center no-repeat;
   background-size: cover;
   position: relative;
 }
