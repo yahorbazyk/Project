@@ -20,6 +20,9 @@ headerMenuButton.addEventListener('click', () => {
   body.classList.toggle('no-scroll');
 });
 
+const addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
+document.querySelector('.page__hero').style.height = 'calc(100vh - ' + addressBarHeight + 'px)';
+
 servicesLinks.forEach((link) => {
   link.addEventListener('click', () => {
     if (body.classList.contains('no-scroll')) {
