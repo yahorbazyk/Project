@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#fff" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer type="module" src="../js/main.js"></script>
+    <script defer type="module" src="../js/modal.js"></script>
+
+    <title>Restrada</title>
+  </head>
+  <body class="no-scroll">
+    <div class="preloader">
+      <div class="preloader-content">
+        <img src="../images/logo.svg" alt="Restrada" />
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <header class="header main-header">
+        <div class="header__container">
+          <div class="header__wrapper">
+            <div class="header__navigation">
+              <nav class="header__menu menu">
+                <ul class="menu__list header-menu-list">
+                  <div class="menu__marker"></div>
+                  <li class="menu__item">
+                    <a class="menu__link" href="about-us.html">О нас</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link-sevices" href="index.html#services">Услуги</a>
+                  </li>
+                  <li class="menu__item logo-container">
+                    <a class="menu__link logo" href="index.html">
+                      <img decoding="async" class="logo__image" src="../images/logo.svg" alt="Логотип Restrada" />
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="contacts.html">Контакты</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="our-fleet.html">Наш автопарк</a>
+                  </li>
+                  <li class="menu__item item-hamburger">
+                    <button class="header__hamburger hamburger">
+                      <span class="hamburger-line"></span>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__hero"></div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__main-slider main-slider swiper swiper-v">
+            <div class="main-slider__wrapper swiper-wrapper">
+              <div class="main-slider__slide swiper-slide">
+                <div class="main-slider__bg bg">
+                  <img decoding="async" src="../images/main-slider/01.jpg" alt="Перевозка грузов" />
+                </div>
+
+                <div class="main-slider__extended-slider extended-slider swiper swiper-h">
+                  <div class="extended-slider__wrapper swiper-wrapper">
+                    <div class="extended-slider__slide swiper-slide">
+                      <div class="extended-slider__container">
+                        <div class="extended-slider__service">
+                          <h2 class="extended-slider__title">Перевозка грузов</h2>
+                          <p class="extended-slider__description">
+                            Автомобильные перевозки - это самый распространенный и популярный способ доставки грузов, как в нашей
+                            стране, так и за ее пределами...
+                          </p>
+                        </div>
+                        <button class="extended-slider__button button button-next">Подробнее</button>
+                      </div>
+                    </div>
+
+                    <div class="extended-slider__slide swiper-slide">
+                      <div class="extended-slider__container">
+                        <div class="extended-slider__service detailed">
+                          <div class="extended-slider__service-item">
+                            <h2 class="extended-slider__title">Автомобильные перевозки</h2>
+                            <p class="extended-slider__main-service-text">
+                              Самый распространенный и популярный способ доставки грузов. Преимущества перевозок автомобильным
+                              транспортом очевидны: оптимальное соотношение стоимости перевозки и срока доставки, возможность
+                              доставки «от двери до двери», выполнение срочных заказов, гибкость маршрута перевозки и доставка
+                              товаров к строго определённому времени.
+                            </p>
+                          </div>
+
+                          <div class="extended-slider__service-item">
+                            <h2 class="extended-slider__title">Железнодорожные перевозки</h2>
+                            <p class="extended-slider__main-service-text">
+                              Популярный и надежный способ транспортировки грузов на различные расстояния. Железнодорожные
+                              перевозки грузов выгодно выделяются среди существующих способов транспортировки рядом преимуществ:
+                              доставка грузов не зависит от погодных условий, стоимость перевозки значительно дешевле авиа и
+                              автомобильных перевозок, большая грузоподъемность подвижного состава.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="extended-slider__button-next swiper-button-next"></div>
+                      </div>
+                    </div>
+
+                    <div class="extended-slider__slide swiper-slide">
+                      <div class="extended-slider__container">
+                        <div class="extended-slider__service detailed">
+                          <div class="extended-slider__service-item">
+                            <h2 class="extended-slider__title">Авиаперевозки</h2>
+
+                            <p class="extended-slider__main-service-text">
+                              Является единственным способом доставить груз в любую точку планеты за минимальный промежуток
+                              времени. Но это и самый дорогой вид транспорта, поэтому его выбирают, когда в приоритете скорость:
+                              при перевозке скоропортящихся товаров, опытных образцов продукции, выставочных экземпляров,
+                              медикаментов и медицинской техники.
+                            </p>
+                          </div>
+                          <div class="extended-slider__service-item">
+                            <h2 class="extended-slider__title">Мультимодальные перевозки</h2>
+
+                            <p class="extended-slider__main-service-text">
+                              Транспортировка одного и того же груза различными видами транспорта: автомобильным, морским, авиа и
+                              железнодорожным. Главное условие - не менее двух способов доставки в одном маршруте. Их преимущество
+                              - объединение лучших сторон доставки транспорта каждого вида.
+                            </p>
+                          </div>
+                        </div>
+                        <button class="extended-slider__button button button-prev">Назад</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-slider__slide swiper-slide">
+                <div class="main-slider__bg bg">
+                  <img decoding="async" src="../images/main-slider/02.jpg" alt="Услуги таможенного оформления" />
+                </div>
+
+                <div class="main-slider__extended-slider extended-slider swiper swiper-h">
+                  <div class="extended-slider__wrapper swiper-wrapper">
+                    <div class="extended-slider__slide swiper-slide">
+                      <div class="extended-slider__container">
+                        <div class="extended-slider__service">
+                          <h2 class="extended-slider__title">Услуги таможенного оформления</h2>
+                          <p class="extended-slider__description">
+                            Мы живем в быстроменяющемся мире и знаем, какими сложностями может быть омрачено таможенное
+                            оформление. Наша команда состоит из опытных таможенных брокеров...
+                          </p>
+                        </div>
+                        <button class="extended-slider__button button button-next">Подробнее</button>
+                      </div>
+                    </div>
+
+                    <div class="extended-slider__slide swiper-slide">
+                      <div class="extended-slider__container">
+                        <div class="extended-slider__service detailed">
+                          <h2 class="extended-slider__title">Услуги таможенного оформления</h2>
+
+                          <p class="extended-slider__foreword">
+                            Мы живем в быстроменяющемся мире и знаем, какими сложностями может быть омрачено таможенное
+                            оформление. Наша команда состоит из опытных таможенных брокеров и специалистов, обладающих глубокими
+                            знаниями в области таможенного законодательства. Мы готовы взять на себя эту ответственность, чтобы вы
+                            могли сосредоточиться на своем бизнесе.
+                          </p>
+
+                          <p class="extended-slider__main-services-text"><b>Предлагаем вам наши услуги</b>:</p>
+
+                          <p class="extended-slider__main-service-text">
+                            · по проверке наличия запретов и ограничений, введенных Европейским союзом, в отношении планируемых к
+                            доставке товаров в / из стран членов ЕАЭС, <br />· по контролю легитимности ввоза и вывоза товаров в
+                            соответствии с таможенным законодательством ЕАЭС, <br />· по проверке товаросопроводительных
+                            документов на соответствие требованиям таможенного законодательства для пересечения таможенной
+                            границы.
+                          </p>
+                        </div>
+
+                        <button class="extended-slider__button button button-prev">Назад</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-slider__slide swiper-slide">
+                <div class="main-slider__bg bg">
+                  <img decoding="async" src="../images/main-slider/03.jpg" alt="Страхование грузов" />
+                </div>
+
+                <div class="main-slider__extended-slider extended-slider swiper swiper-h">
+                  <div class="extended-slider__wrapper swiper-wrapper">
+                    <div class="extended-slider__slide swiper-slide">
+                      <div class="extended-slider__container">
+                        <div class="extended-slider__service">
+                          <h2 class="extended-slider__title">Страхование грузов</h2>
+                          <p class="extended-slider__description">
+                            Страхование грузов рассчитано на собственников товаров и грузов, перевозимых различными видами
+                            транспорта, и позволяет компенсировать убытки...
+                          </p>
+                        </div>
+                        <button class="extended-slider__button button button-next">Подробнее</button>
+                      </div>
+                    </div>
+
+                    <div class="extended-slider__slide swiper-slide">
+                      <div class="extended-slider__container">
+                        <div class="extended-slider__service detailed">
+                          <h2 class="extended-slider__title">Страхование грузов</h2>
+
+                          <p class="extended-slider__foreword">
+                            Страхование грузов рассчитано на собственников товаров и грузов, перевозимых различными видами
+                            транспорта, и позволяет компенсировать убытки, связанные с повреждением или утратой груза. Величина
+                            страхового тарифа устанавливается в зависимости от условий страхования, вида груза и его упаковки,
+                            маршрутов перевозки, наличия перегрузок, стоимости груза, объема перевозок и других факторов.
+                          </p>
+
+                          <p class="extended-slider__main-services-text"><b>Преимущества страхования грузов</b>:</p>
+                          <p class="extended-slider__main-service-text">
+                            ​Основное преимущество страхования грузов заключается в том, что вы минимизируете свои финансовые
+                            потери, если груз будет поврежден или утерян. Небольшая плата за страхование (так называемая страховая
+                            премия), которую вы платите, обеспечивает душевное спокойствие, когда товары покидают место загрузки и
+                            доставляются к вам на склад.
+                          </p>
+                        </div>
+
+                        <button class="extended-slider__button button button-prev">Назад</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-slider__slide swiper-slide">
+                <div class="main-slider__bg bg">
+                  <img decoding="async" src="../images/main-slider/04.jpg" alt="Складские услуги" />
+                </div>
+
+                <div class="main-slider__extended-slider extended-slider swiper swiper-h">
+                  <div class="extended-slider__wrapper swiper-wrapper">
+                    <div class="extended-slider__slide swiper-slide">
+                      <div class="extended-slider__container">
+                        <div class="extended-slider__service">
+                          <h2 class="extended-slider__title">Складские услуги</h2>
+                          <p class="extended-slider__description">
+                            Наша компания предлагает комплексные складские услуги, чтобы позаботиться обо всех ваших потребностях.
+                            Получаем, храним, упаковываем, отслеживаем и отправляем ваши товары.
+                          </p>
+                        </div>
+                        <button class="extended-slider__button button button-next">Подробнее</button>
+                      </div>
+                    </div>
+
+                    <div class="extended-slider__slide swiper-slide">
+                      <div class="extended-slider__container">
+                        <div class="extended-slider__service detailed">
+                          <h2 class="extended-slider__title">Складские услуги</h2>
+
+                          <p class="extended-slider__foreword">
+                            Наша компания предлагает комплексные складские услуги, чтобы позаботиться обо всех ваших потребностях.
+                            Получаем, храним, упаковываем, отслеживаем и отправляем ваши товары. Обеспечиваем полный контроль
+                            движения и хранения материалов на складе и в вашей цепочке поставок.
+                          </p>
+
+                          <p class="extended-slider__main-services-text"><b>Преимущества наших складских услуг</b>:</p>
+
+                          <p class="extended-slider__main-service-text">
+                            1. <b>Безопасность</b>: Ваши товары защищены от кражи, повреждений или несанкционированного доступа.
+                          </p>
+                          <p class="extended-slider__main-service-text">
+                            2. <b>Отслеживание</b>: Отслеживание Вы всегда знаете, в каком состоянии ваши товары прибыли на склад,
+                            находятся там и покинули его.
+                          </p>
+                          <p class="extended-slider__main-service-text">
+                            3. <b>Соблюдение сроков</b>: Складские операции проходят бесперебойно и под строгим контролем, что
+                            позволит вам сосредоточиться на росте вашего бизнеса.
+                          </p>
+                        </div>
+
+                        <button class="extended-slider__button button button-prev">Назад</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-slider__pagination swiper-pagination"></div>
+
+            <div class="main-slider__arrow-down arrow-down">
+              <a href="#about-us" class="arrow-down__link">
+                <svg width="44" height="80" viewBox="0 0 65 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M62.3565 1.53944C61.4898 0.761593 60.0813 0.761593 59.2145 1.53944L31.5861 26.3819L3.90346 1.53944C3.03669 0.761593 1.62818 0.761593 0.761409 1.53944C-0.105365 2.31729 -0.105365 3.58129 0.761409 4.35914L29.9609 30.5629C30.3942 30.9518 30.936 31.1463 31.5319 31.1463C32.0736 31.1463 32.6695 30.9518 33.1029 30.5629L62.3024 4.35914C63.2233 3.58129 63.2233 2.31729 62.3565 1.53944Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__about-us about-us" id="about-us">
+          <div class="about-us__container">
+            <article class="about-us__content">
+              <h3 class="about-us__title title">О нас</h3>
+              <div class="about-us__description">
+                <p class="about-us__text text">
+                  Выбрав нашу компанию, вы получаете надежного партнера, который сможет помочь вам в достижении ваших бизнес-целей
+                  и обеспечении эффективной логистики.
+                </p>
+
+                <p class="about-us__text text">
+                  Наша логистическая компания - ваш надежный партнер для всех ваших потребностей в сфере логистики. Мы предлагаем
+                  широкий спектр логистических услуг, включая грузоперевозки, складские операции, упаковку и таможенное
+                  оформление. Независимо от размера и сложности вашего груза, мы готовы предоставить вам эффективные и надежные
+                  решения.
+                </p>
+              </div>
+              <a class="main-slider__button button" href="about-us.html">Подробнее</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="page__services services" id="services">
+          <div class="services__container">
+            <div class="services__wrapper">
+              <article class="services__top">
+                <h3 class="services__title title">Наши услуги</h3>
+                <p class="services__text text">
+                  Мы предоставляем полный спектр логистических услуг, включая грузоперевозки, складские операции, таможенное
+                  оформление, доставку по международным маршруам и другие дополнительные услуги. Вы можете обратиться к нам для
+                  решения любых логистических задач.
+                </p>
+              </article>
+
+              <div class="services__bottom">
+                <div class="services__slider services-slider swiper">
+                  <div class="services-slider__wrapper swiper-wrapper">
+                    <div class="services-slider__slide swiper-slide">
+                      <figure class="services-slider__card card">
+                        <a class="card__link">
+                          <img decoding="async" src="../images/services-slider/01.jpg" alt="Перевозка грузов" />
+
+                          <div class="card__body">
+                            <div class="card__bg"></div>
+                            <div class="card__content">
+                              <figcaption class="card__title">Перевозка грузов</figcaption>
+                              <p class="card__description">
+                                Автомобильные перевозки - это самый распространенный и популярный способ доставки...
+                              </p>
+
+                              <button class="card__button button open-modal-button" data-modal="cargo-transportation">
+                                Подробнее
+                              </button>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="services-slider__slide swiper-slide">
+                      <figure class="services-slider__card card">
+                        <a class="card__link">
+                          <img decoding="async" src="../images/services-slider/02.jpg" alt="Складские услуги" />
+
+                          <div class="card__body">
+                            <div class="card__bg"></div>
+                            <div class="card__content">
+                              <figcaption class="card__title">Складские услуги</figcaption>
+                              <p class="card__description">
+                                Наша компания предлагает комплексные складские услуги, чтобы позаботиться обо всех ваших...
+                              </p>
+                              <button class="card__button button open-modal-button" data-modal="warehouse-services">
+                                Подробнее
+                              </button>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                      <div class="services-slider__expanded-content"></div>
+                    </div>
+                    <div class="services-slider__slide swiper-slide">
+                      <figure class="services-slider__card card">
+                        <a class="card__link">
+                          <img decoding="async" src="../images/services-slider/03.jpg" alt="Услуги таможенного оформления" />
+
+                          <div class="card__body">
+                            <div class="card__bg"></div>
+                            <div class="card__content">
+                              <figcaption class="card__title">Услуги таможенного оформления</figcaption>
+                              <p class="card__description">
+                                Мы живем в быстроменяющемся мире и знаем, какими сложностями может быть омрачено...
+                              </p>
+                              <button class="card__button button open-modal-button" data-modal="customs-clearance">
+                                Подробнее
+                              </button>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="services-slider__slide swiper-slide">
+                      <figure class="services-slider__card card">
+                        <a class="card__link">
+                          <img decoding="async" src="../images/services-slider/04.jpg" alt="Страхование грузов" />
+
+                          <div class="card__body">
+                            <div class="card__bg"></div>
+                            <div class="card__content">
+                              <figcaption class="card__title">Страхование грузов</figcaption>
+                              <p class="card__description">
+                                Страхование грузов рассчитано на собственников товаров и грузов, перевозимых...
+                              </p>
+                              <button class="card__button button open-modal-button" data-modal="cargo-insurance">
+                                Подробнее
+                              </button>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="services-slider__button-next swiper-button-next"></div>
+                  <div class="services-slider__button-prev swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__directions directions">
+          <div class="directions__container">
+            <article class="directions__content">
+              <h3 class="directions__title title">Наши направления</h3>
+              <p class="directions__text text">
+                Мы имеем широкую географическую сеть и сотрудничество с международными партнерами во многих странах. Благодаря
+                этому мы можем обеспечить доставку вашего груза в любую точку мира.
+              </p>
+
+              <div class="directions__marker-wrapper">
+                <div class="country-marker usa">
+                  <img src="../images/marker.svg" alt="США" />
+                  <p>США</p>
+                </div>
+                <div class="country-marker canada">
+                  <img src="../images/marker.svg" alt="Канада" />
+                  <p>Канада</p>
+                </div>
+                <div class="country-marker europe">
+                  <img src="../images/marker.svg" alt="Европа" />
+                  <p>Европа</p>
+                </div>
+                <div class="country-marker africa">
+                  <img src="../images/marker.svg" alt="Африка" />
+                  <p>Африка</p>
+                </div>
+                <div class="country-marker egypt">
+                  <img src="../images/marker.svg" alt="Египет" />
+                  <p>Египет</p>
+                </div>
+                <div class="country-marker belarus">
+                  <img src="../images/marker.svg" alt="Беларусь" />
+                  <p>Беларусь</p>
+                </div>
+                <div class="country-marker turkey">
+                  <img src="../images/marker.svg" alt="Турция" />
+                  <p>Турция</p>
+                </div>
+                <div class="country-marker armenia">
+                  <img src="../images/marker.svg" alt="Армения" />
+                  <p>Армения</p>
+                </div>
+                <div class="country-marker azerbaijan">
+                  <img src="../images/marker.svg" alt="Азербайджан" />
+                  <p>Азербайджан</p>
+                </div>
+                <div class="country-marker uae">
+                  <p>ОАЭ</p>
+                </div>
+                <div class="country-marker iran">
+                  <img src="../images/marker.svg" alt="Иран" />
+                  <p>Иран</p>
+                </div>
+                <div class="country-marker turkmenistan">
+                  <img src="../images/marker.svg" alt="Туркменистан" />
+                  <p>Туркменистан</p>
+                </div>
+                <div class="country-marker kazakhstan">
+                  <img src="../images/marker.svg" alt="Казахстан" />
+                  <p>Казахстан</p>
+                </div>
+                <div class="country-marker uzbekistan">
+                  <img src="../images/marker.svg" alt="Узбекистан" />
+                  <p>Узбекистан</p>
+                </div>
+                <div class="country-marker kyrgyzstan">
+                  <img src="../images/marker.svg" alt="Киргизия" />
+                  <p>Киргизия</p>
+                </div>
+                <div class="country-marker india">
+                  <img src="../images/marker.svg" alt="Индия" />
+                  <p>Индия</p>
+                </div>
+                <div class="country-marker russia">
+                  <img src="../images/marker.svg" alt="Россия" />
+                  <p>Россия</p>
+                </div>
+                <div class="country-marker china">
+                  <img src="../images/marker.svg" alt="Китай" />
+                  <p>Китай</p>
+                </div>
+                <div class="country-marker japan">
+                  <img src="../images/marker.svg" alt="Япония" />
+                  <p>Япония</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="page__contact-form contact-form">
+          <div class="contact-form__container">
+            <div class="contact-form__body">
+              <div class="contact-form__wrapper">
+                <h2 class="contact-form__header">Ответим на ваши вопросы</h2>
+
+                <form class="contact-form__form" action="mailto:restrada@mail.ru" method="post" enctype="text/plain">
+                  <input class="contact-form__input" type="text" minlength="2" name="name" placeholder="Ваше имя" required />
+                  <input
+                    class="contact-form__input tel-input intl-tel-input"
+                    type="tel"
+                    name="tel"
+                    placeholder="Телефон"
+                    required />
+                  <textarea class="contact-form__input-comment" name="message" placeholder="Комментарий" required></textarea>
+
+                  <label class="contact-form__label">
+                    <input class="contact-form__checkbox" type="checkbox" required />
+                    <span class="contact-form__span">Я согласен на обработку персональных данных</span>
+                  </label>
+
+                  <button class="contact-form__button button" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__wrapper">
+            <div class="footer__navigation">
+              <a class="footer__logo" href="index.html">
+                <img decoding="async" src="../images/logo.svg" alt="Логотип Restrada" />
+              </a>
+
+              <nav class="footer__menu menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="about-us.html">О нас</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="index.html#services">Услуги</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="contacts.html">Контакты</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="our-fleet.html">Наш автопарк</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__info">
+              <div class="footer__contacts contacts">
+                <div class="contacts__title">Контактная информация</div>
+
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+375336788076">+375 (33) 678-80-76</a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+375296789807">+375 (29) 678-98-07</a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link email-link" href="mailto:restrada@mail.ru">restrada@mail.ru</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer__socials socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a class="socials__link" href="">
+                      <img decoding="async" src="../images/socials/linkedin.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""> <img decoding="async" src="../images/socials/skype.svg" alt="Skype" /></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""> <img decoding="async" src="../images/socials/viber.svg" alt="Viber" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="card__popup popup" id="cargo-transportation">
+      <div class="popup-inner">
+        <img src="../images/main-slider/01.jpg" alt="Перевозки грузов" />
+        <div class="popup__body">
+          <h1>Перевозка грузов</h1>
+
+          <article class="popup__service-description">
+            <h2>Автомобильные перевозки</h2>
+            <p>
+              Самый распространенный и популярный способ доставки грузов. Преимущества перевозок автомобильным транспортом
+              очевидны: оптимальное соотношение стоимости перевозки и срока доставки, возможность доставки «от двери до двери»,
+              выполнение срочных заказов, гибкость маршрута перевозки и доставка товаров к строго определённому времени.
+            </p>
+          </article>
+
+          <article class="popup__service-description">
+            <h2>Железнодорожные перевозки</h2>
+            <p>
+              Популярный и надежный способ транспортировки грузов на различные расстояния. Железнодорожные перевозки грузов
+              выгодно выделяются среди существующих способов транспортировки рядом преимуществ: доставка грузов не зависит от
+              погодных условий, стоимость перевозки значительно дешевле авиа и автомобильных перевозок, большая грузоподъемность
+              подвижного состава.
+            </p>
+          </article>
+
+          <article class="popup__service-description">
+            <h2>Авиаперевозки</h2>
+            <p>
+              Является единственным способом доставить груз в любую точку планеты за минимальный промежуток времени. Но это и
+              самый дорогой вид транспорта, поэтому его выбирают, когда в приоритете скорость: при перевозке скоропортящихся
+              товаров, опытных образцов продукции, выставочных экземпляров, медикаментов и медицинской техники.
+            </p>
+          </article>
+
+          <article class="popup__service-description">
+            <h2>Мультимодальные перевозки</h2>
+            <p>
+              Транспортировка одного и того же груза различными видами транспорта: автомобильным, морским, авиа и железнодорожным.
+              Главное условие - не менее двух способов доставки в одном маршруте. Их преимущество - объединение лучших сторон
+              доставки транспорта каждого вида.
+            </p>
+          </article>
+        </div>
+
+        <button class="popup__close close-modal-button" data-modal="cargo-transportation">
+          <div class="in">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+          <div class="out">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="card__popup popup" id="warehouse-services">
+      <div class="popup-inner">
+        <img src="../images/main-slider/04.jpg" alt="Складские услуги" />
+        <div class="popup__body">
+          <article class="popup__service">
+            <h1>Складские услуги</h1>
+
+            <p class="popup__foreword">
+              Наша компания предлагает комплексные складские услуги, чтобы позаботиться обо всех ваших потребностях. Получаем,
+              храним, упаковываем, отслеживаем и отправляем ваши товары. Обеспечиваем полный контроль движения и хранения
+              материалов на складе и в вашей цепочке поставок.
+            </p>
+
+            <p class="popup__main-services-text">Преимущества наших складских услуг:</p>
+
+            <ol class="popup__services-list">
+              <li class="popup__service-item">
+                <b>Безопасность</b>: Ваши товары защищены от кражи, повреждений или несанкционированного доступа.
+              </li>
+              <li class="popup__service-item">
+                <b>Отслеживание</b>: Отслеживание Вы всегда знаете, в каком состоянии ваши товары прибыли на склад, находятся там
+                и покинули его.
+              </li>
+              <li class="popup__service-item">
+                <b>Соблюдение сроков</b>: Складские операции проходят бесперебойно и под строгим контролем, что позволит вам
+                сосредоточиться на росте вашего бизнеса.
+              </li>
+            </ol>
+          </article>
+        </div>
+
+        <button class="popup__close close-modal-button" data-modal="warehouse-services">
+          <div class="in">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+          <div class="out">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="card__popup popup" id="customs-clearance">
+      <div class="popup-inner">
+        <img src="../images/main-slider/02.jpg" alt="Услуги таможенного оформления" />
+        <div class="popup__body">
+          <h1>Услуги таможенного оформления</h1>
+          <article class="popup__service">
+            <p class="popup__foreword">
+              Мы живем в быстроменяющемся мире и знаем, какими сложностями может быть омрачено таможенное оформление. Наша команда
+              состоит из опытных таможенных брокеров и специалистов, обладающих глубокими знаниями в области таможенного
+              законодательства. Мы готовы взять на себя эту ответственность, чтобы вы могли сосредоточиться на своем бизнесе.
+            </p>
+
+            <p class="popup__main-services-text">Предлагаем вам наши услуги:</p>
+
+            <p class="popup__main-service-text">
+              · по проверке наличия запретов и ограничений, введенных Европейским союзом, в отношении планируемых к доставке
+              товаров в / из стран членов ЕАЭС, <br />· по контролю легитимности ввоза и вывоза товаров в соответствии с
+              таможенным законодательством ЕАЭС, <br />· по проверке товаросопроводительных документов на соответствие требованиям
+              таможенного законодательства для пересечения таможенной границы.
+            </p>
+          </article>
+        </div>
+
+        <button class="popup__close close-modal-button" data-modal="customs-clearance">
+          <div class="in">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+          <div class="out">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="card__popup popup" id="cargo-insurance">
+      <div class="popup-inner">
+        <img src="../images/main-slider/03.jpg" alt="Страхование грузов" />
+        <div class="popup__body">
+          <h1>Страхование грузов</h1>
+          <article class="popup__service">
+            <p class="popup__foreword">
+              Страхование грузов рассчитано на собственников товаров и грузов, перевозимых различными видами транспорта, и
+              позволяет компенсировать убытки, связанные с повреждением или утратой груза. Величина страхового тарифа
+              устанавливается в зависимости от условий страхования, вида груза и его упаковки, маршрутов перевозки, наличия
+              перегрузок, стоимости груза, объема перевозок и других факторов.
+            </p>
+
+            <p class="popup__main-services-text">Преимущества страхования грузов:</p>
+
+            <p class="popup__main-service-text">
+              ​Основное преимущество страхования грузов заключается в том, что вы минимизируете свои финансовые потери, если груз
+              будет поврежден или утерян. Небольшая плата за страхование (так называемая страховая премия), которую вы платите,
+              обеспечивает душевное спокойствие, когда товары покидают место загрузки и доставляются к вам на склад.
+            </p>
+          </article>
+        </div>
+
+        <button class="popup__close close-modal-button" data-modal="cargo-insurance">
+          <div class="in">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+          <div class="out">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
