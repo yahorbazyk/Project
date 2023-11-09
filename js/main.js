@@ -59,20 +59,22 @@ const updateMarkerPosition = () => {
     '.china',
     '.japan',
   ];
-  const customMapWidth = document.querySelector('.page__directions').clientWidth;
+  const customMapWidth = document.querySelector('.page__directions')?.clientWidth;
 
-  markerSelectors.forEach((selector) => {
-    const marker = document.querySelector(`.country-marker${selector}`);
+  if (customMapWidth) {
+    markerSelectors.forEach((selector) => {
+      const marker = document.querySelector(`.country-marker${selector}`);
 
-    if (marker) {
-      const markerComputedStyle = window.getComputedStyle(marker);
-      const markerLeftValue = parseInt(markerComputedStyle.getPropertyValue('left').replace('px', ''), 10);
+      if (marker) {
+        const markerComputedStyle = window.getComputedStyle(marker);
+        const markerLeftValue = parseInt(markerComputedStyle.getPropertyValue('left').replace('px', ''), 10);
 
-      marker.style.left = `${markerLeftValue - (screenWidth - customMapWidth) / 2}px`;
-    }
-  });
+        marker.style.left = `${markerLeftValue - (screenWidth - customMapWidth) / 2}px`;
+      }
+    });
 
-  screenWidth = customMapWidth;
+    screenWidth = customMapWidth;
+  }
 };
 
 updateMarkerPosition();
