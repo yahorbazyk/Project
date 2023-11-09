@@ -22,7 +22,7 @@ const handleMenuEffects = (currentPage) => {
   let currentItem;
 
   menuItems.forEach((menuItem) => {
-    if (menuItem.getAttribute('href') === currentPage) {
+    if (menuItem.getAttribute('href') === currentPage.split('/').pop()) {
       currentItem = menuItem;
       updateMarkerPosition(menuItem);
     } else {
