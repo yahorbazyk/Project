@@ -2074,7 +2074,7 @@ main {
 
   .main-slider__pagination.swiper-pagination {
     display: flex !important;
-    top: 85 !important;
+    top: 85% !important;
     right: 40% !important;
     transform: translateX(50%) !important;
   }
