@@ -12,8 +12,8 @@ const mainSliderOptions = {
       const totalSlides = this.slides.length;
 
       if (currentSlide === totalSlides - 1 && e.swipeDirection === 'next') {
-        this.allowSlideNext = false;
         window.location.href = "#about-us";
+        this.allowSlideNext = false;
       } else {
         this.allowSlideNext = true;
       }
