@@ -2244,7 +2244,7 @@ main {
     width: 100%;
   }
 
-  .header__menu .menu__list {
+  .header__menu .menu__list:not(.active) {
     padding-top: 1.875rem;
   }
 }
