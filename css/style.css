@@ -1534,7 +1534,6 @@ main {
   height: 100%;
   padding: 5rem;
   z-index: 2;
-  pointer-events: none;
 }
 
 .popup__body h1 {
