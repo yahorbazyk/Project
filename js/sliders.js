@@ -6,6 +6,7 @@ const mainSliderOptions = {
   keyboard: {
     enabled: true,
   },
+  allowTouchMove: false,
   pagination: {
     el: '.main-slider__pagination.swiper-pagination',
     clickable: true,
@@ -60,7 +61,6 @@ const servicesSliderOptions = {
       spaceBetween: 20,
     },
   },
-  parallax: true,
   keyboard: {
     enabled: true,
   },
