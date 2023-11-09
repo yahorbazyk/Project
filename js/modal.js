@@ -5,16 +5,16 @@ const closeModaButtons = document.querySelectorAll('.close-modal-button');
 const openModal = (modalId) => {
   const modal = document.getElementById(modalId);
   if (modal && !modal.classList.contains('open')) {
-    modal.classList.add('open');
     body.classList.add('no-scroll');
+    modal.classList.add('open');
   }
 };
 
 const closeModal = (modalId) => {
   const modal = document.getElementById(modalId);
   if (modal && modal.classList.contains('open')) {
-    modal.classList.remove('open');
     body.classList.remove('no-scroll');
+    modal.classList.remove('open');
   }
 };
 
