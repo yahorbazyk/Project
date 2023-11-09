@@ -452,6 +452,7 @@ main {
   background: rgba(49, 108, 67, 0.39);
   border-radius: 70.7447rem;
   filter: blur(9.375rem);
+  -webkit-filter: blur(9.375rem);
   z-index: -1;
   top: -3.9375rem;
   left: -15.875rem;
@@ -514,6 +515,7 @@ main {
   border-radius: 52.6793rem;
   background: rgba(49, 108, 67, 0.64);
   filter: blur(9.375rem);
+  -webkit-filter: blur(9.375rem);
   z-index: -1;
   top: -3.125rem;
   right: -8rem;
@@ -1146,6 +1148,7 @@ main {
   border-radius: 55.5064rem;
   background: rgba(49, 108, 67, 0.45);
   filter: blur(9.375rem);
+  -webkit-filter: blur(9.375rem);
   z-index: -1;
   top: -7.125rem;
   right: -3rem;
@@ -1324,6 +1327,7 @@ main {
   border-radius: 70.875rem;
   background: rgba(49, 108, 67, 0.39);
   filter: blur(9rem);
+  -webkit-filter: blur(9rem);
   z-index: -1;
   top: -35rem;
   left: -8rem;
@@ -1337,6 +1341,7 @@ main {
   border-radius: 52.6875rem;
   background: rgba(49, 108, 67, 0.64);
   filter: blur(9.375rem);
+  -webkit-filter: blur(9.375rem);
   z-index: -1;
   bottom: -20rem;
   right: -6rem;
