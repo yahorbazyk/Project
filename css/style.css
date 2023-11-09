@@ -310,7 +310,6 @@ main {
 }
 
 .transportation__content {
-  padding: 4.0625rem 0;
   border-bottom: 1px solid #fff;
 }
 
@@ -2105,7 +2104,7 @@ main {
   }
 
   .hero__service-text {
-    font-size: clamp(0.75rem, 2.4vw, 1.125rem);
+    font-size: clamp(.625rem, 2.4vw, 1.125rem);
   }
 
   .hero__title {
