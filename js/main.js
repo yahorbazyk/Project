@@ -25,7 +25,6 @@ const setHeight = () => {
   document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
 };
 setHeight();
-window.addEventListener('resize', setHeight);
 // document.querySelector('.page__hero').style.height = 'calc(100vh - ' + addressBarHeight + 'px)';
 
 servicesLinks.forEach((link) => {
@@ -90,6 +89,7 @@ window.addEventListener('resize', () => {
     document.body.classList.remove('no-scroll');
   }
   menu.handleMenuEffects(currentPage.substring(1));
+  setHeight();
 });
 
 switch (currentPage.replace('.html', '')) {
