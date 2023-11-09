@@ -1880,9 +1880,6 @@ main {
     min-width: 6.875rem;
   }
 
-  .header-menu-list {
-  }
-
   .header-menu-list.active {
     background: rgba(16, 53, 31, 0.01);
     backdrop-filter: blur(1.875rem);
@@ -2245,6 +2242,10 @@ main {
 
   .our-fleet__image {
     width: 100%;
+  }
+
+  .header__menu .menu__list {
+    padding-top: 1.875rem;
   }
 }
 
