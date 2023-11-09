@@ -310,18 +310,22 @@ main {
 }
 
 .transportation__content {
+  padding-bottom: 4.0625rem;
+}
+
+.transportation__content {
   border-bottom: 1px solid #fff;
 }
 
 .transportation__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(clamp(4.6875rem, 20vw, 7.6875rem), auto));
+  grid-template-columns: repeat(auto-fill, minmax(clamp(9.6875rem, 20vw, 7.6875rem), auto));
   width: 100%;
-  gap: clamp(20px, 5vw, 3.0625rem) clamp(30px, 16vw, 5.25rem);
+  gap: clamp(20px, 5vw, 3.0625rem) clamp(30px, 5vw, 5.25rem);
 }
 
 .transportation__country p {
-  font-size: clamp(0.4875rem, 2.2vw, 1.125rem);
+  font-size: clamp(0.625rem, 2.8vw, 1.125rem);
 }
 
 .transportation__country {
@@ -2112,7 +2116,7 @@ main {
   }
 
   .hero__service-text {
-    font-size: clamp(0.625rem, 2.4vw, 1.125rem);
+    font-size: 0.625rem;
   }
 
   .hero__title {
@@ -2246,6 +2250,10 @@ main {
 
   .header__menu .menu__list:not(.active) {
     padding-top: 1.875rem;
+  }
+
+  .transportation__wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(clamp(6.6875rem, 30vw, 7.6875rem), auto));
   }
 }
 
