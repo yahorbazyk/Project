@@ -20,8 +20,13 @@ headerMenuButton.addEventListener('click', () => {
   body.classList.toggle('no-scroll');
 });
 
-const addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
-document.querySelector('.page__hero').style.height = 'calc(100vh - ' + addressBarHeight + 'px)';
+// const addressBarHeight = 30; //window.innerHeight - document.documentElement.clientHeight;
+const setHeight = () => {
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+};
+setHeight();
+window.addEventListener('resize', setHeight);
+// document.querySelector('.page__hero').style.height = 'calc(100vh - ' + addressBarHeight + 'px)';
 
 servicesLinks.forEach((link) => {
   link.addEventListener('click', () => {

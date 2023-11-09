@@ -72,6 +72,7 @@ main {
 
 .page__hero {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   margin-bottom: 4.375rem;
 }
 
