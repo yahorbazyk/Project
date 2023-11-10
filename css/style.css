@@ -143,9 +143,11 @@ main {
 @keyframes rotateText {
   0% {
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 
@@ -1521,6 +1523,7 @@ main {
   width: 60%;
   height: 80%;
   transform: rotate(32deg);
+  -webkit-transform: rotate(32deg);
   transition: 0.64s ease-in-out;
 }
 
@@ -1965,15 +1968,18 @@ main {
     top: 50%;
     left: 0;
     transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
     background-color: #fff;
   }
 
   .hamburger.active::before {
     transform: translateY(-50%) rotate(-45deg);
+    -webkit-transform: translateY(-50%) rotate(-45deg);
   }
 
   .hamburger.active::after {
     transform: translateY(-50%) rotate(45deg);
+    -webkit-transform: translateY(-50%) rotate(45deg);
   }
 
   .hamburger {
@@ -1998,9 +2004,20 @@ main {
     left: 0;
     height: 0.125rem;
     background-color: #fff;
-    transition: all 0.3s ease-in-out;
     position: absolute;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+  }
+
+  @keyframes slideInOut {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .hamburger-line {

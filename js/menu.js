@@ -26,6 +26,7 @@ const handleMenuEffects = (currentPage) => {
       currentItem = menuItem;
       updateMarkerPosition(menuItem);
     } else {
+      
     }
 
     menuItem.addEventListener('mouseover', () => handleMenuItemMouseOver(menuItem));

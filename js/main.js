@@ -20,12 +20,11 @@ headerMenuButton.addEventListener('click', () => {
   body.classList.toggle('no-scroll');
 });
 
-// const addressBarHeight = 30; //window.innerHeight - document.documentElement.clientHeight;
 const setHeight = () => {
   document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
 };
+
 setHeight();
-// document.querySelector('.page__hero').style.height = 'calc(100vh - ' + addressBarHeight + 'px)';
 
 servicesLinks.forEach((link) => {
   link.addEventListener('click', () => {
@@ -91,7 +90,6 @@ window.addEventListener('resize', () => {
     document.body.classList.remove('no-scroll');
   }
   menu.handleMenuEffects(currentPage.substring(1));
-  setHeight();
 });
 
 switch (currentPage.replace('.html', '')) {
