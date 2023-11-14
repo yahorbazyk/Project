@@ -333,11 +333,11 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(clamp(9.6875rem, 20vw, 7.6875rem), auto));
   width: 100%;
-  gap: clamp(20px, 5vw, 3.0625rem) clamp(30px, 5vw, 5.25rem);
+  gap: clamp(20px, 5vw, 3.0625rem) clamp(30px, 3vw, 5.25rem);
 }
 
 .transportation__country p {
-  font-size: clamp(0.625rem, 1.8vw, 1.125rem);
+  font-size: clamp(0.625rem, 1vw, 1.125rem);
 }
 
 .transportation__country {
@@ -2323,6 +2323,12 @@ main {
   .text-first {
     grid-row: span 1;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-height: 888.98px) and (min-width: 1439.98px) {
+  .hero__service-text {
+    font-size: clamp(0.6875rem, 0.8vw, 1.125rem);
   }
 }
 
