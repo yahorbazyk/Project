@@ -402,6 +402,9 @@ main {
 
 .extended-slider__service {
   max-width: 71.875rem;
+}
+
+.extended-slider__slide:first-child .extended-slider__service {
   margin: 0 auto 2.1875rem 0;
 }
 
@@ -597,22 +600,33 @@ main {
   -webkit-animation: arrow-button-next 2s infinite;
 }
 
-.services-slider__button-prev.swiper-button-prev {
+.services-slider__button-prev.swiper-button-prev,
+.extended-slider__button-prev {
   left: -3rem;
   animation: arrow-button-prev 2s infinite;
   -webkit-animation: arrow-button-prev 2s infinite;
 }
 
+.extended-slider__button svg {
+  width: clamp(1.875rem, 2.3vw, 2.625rem);
+  transform: rotate(90deg);
+}
+
 .services-slider__button-next.swiper-button-next,
 .services-slider__button-prev.swiper-button-prev,
-.extended-slider__button-next {
+.extended-slider__button-next,
+.extended-slider__button-prev {
   animation-delay: -0.5s;
   -webkit-animation-delay: -0.5s;
   padding: 2.5rem;
 }
 
 .extended-slider__button-next.swiper-button-next {
-  right: clamp(60px, 7vw, 18.75rem);
+  right: clamp(3.75rem, 7vw, 18.75rem);
+}
+
+.extended-slider__button-prev.swiper-button-prev {
+  left: clamp(3.75rem, 7vw, 18.75rem);
 }
 
 @keyframes arrow-button-next {
@@ -1896,7 +1910,7 @@ main {
   }
 
   .hero__service-text {
-    font-size: clamp(0.625rem, 1.5vw, 1.125rem);
+    font-size: clamp(0.625rem, 1.3vw, 1.125rem);
   }
 }
 
@@ -2170,7 +2184,7 @@ main {
   }
 
   .hero__service-text {
-    font-size: 0.625rem;
+    font-size: clamp(0.625rem, 1.7vw, 1.125rem);
   }
 
   .hero__title {
@@ -2330,11 +2344,15 @@ main {
   .hero__service-text {
     font-size: clamp(0.6875rem, 0.8vw, 1.125rem);
   }
+
+  .hero__mark {
+    max-width: clamp(100px, 10vw, 10.3125rem);
+  }
 }
 
 @media (max-height: 788.98px) {
   .hero__container .hero__title {
-    font-size: 18px;
+    font-size: clamp(1.25rem, 1.8vw, 2.5rem);
   }
 
   .hero__category {
@@ -2342,7 +2360,7 @@ main {
   }
 
   .hero__wrapper {
-    margin: 20px auto;
+    margin: clamp(1.875rem, 5vw, 6.25rem) auto;
   }
 
   .hero__contacts .contacts__link,
@@ -2353,9 +2371,5 @@ main {
 
   .map__wrapper {
     height: 480px;
-  }
-
-  .hero__mark {
-    display: none;
   }
 }
