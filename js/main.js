@@ -8,16 +8,23 @@ const currentPage = window.location.pathname;
 const body = document.body;
 let screenWidth = 1920;
 
-menu.handleMenuEffects(currentPage.substring(1));
+menu.handleMenuEffects(currentPage);
 
+const header = document.querySelector('header');
 const headerMenuButton = document.querySelector('.header__hamburger');
 const headerMenu = document.querySelector('.header-menu-list');
 const servicesLinks = document.querySelectorAll('.header__menu .link-sevices');
 
 headerMenuButton.addEventListener('click', () => {
+  body.classList.toggle('no-scroll');
+
+  header.classList.toggle('hide');
   headerMenuButton.classList.toggle('active');
   headerMenu.classList.toggle('active');
-  body.classList.toggle('no-scroll');
+
+  setTimeout(() => {
+    headerMenu.classList.toggle('fade');
+  }, 100);
 });
 
 const setHeight = () => {
@@ -30,8 +37,10 @@ servicesLinks.forEach((link) => {
   link.addEventListener('click', () => {
     if (body.classList.contains('no-scroll')) {
       body.classList.remove('no-scroll');
+      header.classList.toggle('hide');
       headerMenuButton.classList.remove('active');
       headerMenu.classList.remove('active');
+      headerMenu.classList.remove('fade');
     }
   });
 });
@@ -89,7 +98,7 @@ window.addEventListener('resize', () => {
     headerMenuButton.classList.remove('active');
     document.body.classList.remove('no-scroll');
   }
-  menu.handleMenuEffects(currentPage.substring(1));
+  menu.handleMenuEffects(currentPage);
 });
 
 switch (currentPage.replace('.html', '')) {

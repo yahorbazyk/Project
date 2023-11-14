@@ -61,17 +61,13 @@ const servicesSliderOptions = {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 1.6,
-      spaceBetween: 20,
-    },
-    1300: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    1800: {
+    1300: {
       slidesPerView: 2.2,
-      spaceBetween: 20,
-    },
+      spaceBetween: 30,
+    }
   },
   keyboard: {
     enabled: true,
