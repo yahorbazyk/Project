@@ -1920,6 +1920,11 @@ main {
   .directions {
     display: none;
   }
+
+  .error{
+    background: url(../images/main-slider/01-480.jpeg) center no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 899.98px) {
