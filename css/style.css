@@ -1580,19 +1580,17 @@ main {
 }
 
 .popup__body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
   height: 100%;
   padding: 3rem;
   z-index: 2;
+  overflow: scroll;
 }
 
 .popup__body h1 {
   font-size: clamp(1.375rem, 1vw, 2rem);
   font-weight: 600;
-  margin-bottom: clamp(0.9375rem, 2vw, 2rem);
+  margin-bottom: clamp(0.9375rem, 3vw, 2rem);
   text-transform: uppercase;
   color: #fff;
 }
@@ -1886,6 +1884,7 @@ main {
     padding: 0 2.5rem 5rem;
     margin-top: 7.5rem;
     justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
   }
 
   .popup__close {
@@ -1906,11 +1905,6 @@ main {
     height: 1.25rem;
   }
 
-  .popup__body {
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-
   .hero__service-text {
     font-size: clamp(0.625rem, 1.3vw, 1.125rem);
   }
@@ -1921,7 +1915,7 @@ main {
     display: none;
   }
 
-  .error{
+  .error {
     background: url(../images/main-slider/01-480.jpeg) center no-repeat;
     background-size: cover;
   }

@@ -101,20 +101,17 @@ window.addEventListener('resize', () => {
   menu.handleMenuEffects(currentPage);
 });
 
-switch (currentPage.replace('.html', '')) {
-  case '/about-us':
+switch (currentPage.substring(1).split('/').pop().replace('.html', '')) {
+  case 'about-us':
     break;
 
-  case '/about-us':
+  case 'contacts':
     break;
 
-  case '/contacts':
+  case 'our-fleet':
     break;
 
-  case '/our-fleet':
-    break;
-
-  case '/services':
+  case '404':
     break;
 
   default:
