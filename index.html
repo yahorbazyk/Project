@@ -74,13 +74,17 @@
             <div class="main-slider__wrapper swiper-wrapper">
               <div class="main-slider__slide swiper-slide">
                 <div class="main-slider__bg bg">
-                  <img decoding="async" src="./images/main-slider/01.jpg" alt="Перевозка грузов" />
+                  <picture>
+                    <source media="(max-width: 480px)" srcset="./images/main-slider/01-480.jpeg" />
+                    <source media="(max-width: 860px)" srcset="./images/main-slider/01-860.jpeg" />
+                    <img decoding="async" src="./images/main-slider/01.jpg" alt="Перевозка грузов" />
+                  </picture>
                 </div>
 
                 <div class="main-slider__extended-slider extended-slider swiper swiper-h">
                   <div class="extended-slider__wrapper swiper-wrapper">
                     <div class="extended-slider__slide swiper-slide">
-                      <div class="extended-slider__container">
+                      <div class="extended-slider__container main-container">
                         <div class="extended-slider__service">
                           <h2 class="extended-slider__title">Перевозка грузов</h2>
                           <p class="extended-slider__description">
@@ -158,7 +162,7 @@
                 <div class="main-slider__extended-slider extended-slider swiper swiper-h">
                   <div class="extended-slider__wrapper swiper-wrapper">
                     <div class="extended-slider__slide swiper-slide">
-                      <div class="extended-slider__container">
+                      <div class="extended-slider__container main-container">
                         <div class="extended-slider__service">
                           <h2 class="extended-slider__title">Услуги таможенного оформления</h2>
                           <p class="extended-slider__description">
@@ -208,7 +212,7 @@
                 <div class="main-slider__extended-slider extended-slider swiper swiper-h">
                   <div class="extended-slider__wrapper swiper-wrapper">
                     <div class="extended-slider__slide swiper-slide">
-                      <div class="extended-slider__container">
+                      <div class="extended-slider__container main-container">
                         <div class="extended-slider__service">
                           <h2 class="extended-slider__title">Страхование грузов</h2>
                           <p class="extended-slider__description">
@@ -256,7 +260,7 @@
                 <div class="main-slider__extended-slider extended-slider swiper swiper-h">
                   <div class="extended-slider__wrapper swiper-wrapper">
                     <div class="extended-slider__slide swiper-slide">
-                      <div class="extended-slider__container">
+                      <div class="extended-slider__container main-container">
                         <div class="extended-slider__service">
                           <h2 class="extended-slider__title">Складские услуги</h2>
                           <p class="extended-slider__description">
@@ -492,6 +496,7 @@
                   <p>Азербайджан</p>
                 </div>
                 <div class="country-marker uae">
+                  <img src="./images/marker.svg" alt="ОАЭ" />
                   <p>ОАЭ</p>
                 </div>
                 <div class="country-marker iran">

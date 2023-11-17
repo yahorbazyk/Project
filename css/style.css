@@ -94,7 +94,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
-  padding: 3.4375rem 0 0.625rem;
+  padding: 3.4375rem 0 0.375rem;
   position: relative;
 }
 
@@ -227,7 +227,8 @@ main {
 }
 
 .main-slider__pagination.swiper-pagination {
-  top: calc(50% + 7rem) !important;
+  top: 50% !important;
+  transform: translate3d(0px, calc(-35% + clamp(6.625rem, 9vw, 7.5rem)), 0) !important;
 }
 
 .main-slider__pagination.swiper-pagination::before {
@@ -405,7 +406,7 @@ main {
 }
 
 .extended-slider__slide:first-child .extended-slider__service {
-  margin: 0 auto 2.1875rem 0;
+  margin: 0 auto clamp(20px, 1.7vw, 30px) 0;
 }
 
 .extended-slider__service.detailed {
@@ -564,7 +565,7 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 3.125rem;
-  margin-bottom: clamp(5.625rem, 12vw, 8.125rem);
+  margin-bottom: 70px;
 }
 
 .services__bottom {
@@ -929,12 +930,13 @@ main {
 }
 
 .uae {
-  top: 443px;
-  left: 1089px;
+  top: 426px;
+  left: 1055px;
+  max-width: 15px;
 }
 
 .uae p {
-  margin: 0 0 0 -37px;
+  margin: 2px 0 0 -8px;
   font-size: 12px;
 }
 
@@ -1922,7 +1924,6 @@ main {
 
 @media (max-width: 899.98px) {
   .header__menu .menu__list {
-    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -1933,6 +1934,7 @@ main {
 
   .logo__image {
     min-width: 6.875rem;
+    padding-bottom: 0.125rem;
   }
 
   .header-menu-list.active {
@@ -1992,7 +1994,9 @@ main {
   }
 
   .header-menu-list .menu__item.item-hamburger {
+    align-items: flex-end;
     justify-content: flex-end;
+    margin-bottom: 0.1875rem;
   }
 
   .header-menu-list .menu__item.logo-container {
@@ -2028,7 +2032,7 @@ main {
   .hamburger {
     display: block;
     width: 1.75rem;
-    height: 1rem;
+    height: 1.125rem;
     cursor: pointer;
     position: relative;
     z-index: 5;
@@ -2047,6 +2051,7 @@ main {
     left: 0;
     height: 0.125rem;
     background-color: #fff;
+    border-radius: 0.1875rem;
     position: absolute;
     transition: all 0.3s ease;
     -webkit-transition: width 0.3s ease;
@@ -2337,6 +2342,14 @@ main {
   .text-first {
     grid-row: span 1;
     margin-bottom: 20px;
+  }
+
+  .extended-slider__container.main-container {
+    top: 37%;
+  }
+
+  .extended-slider__container {
+    top: 43%;
   }
 }
 
