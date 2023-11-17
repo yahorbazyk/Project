@@ -1744,9 +1744,11 @@ main {
 }
 
 .our-fleet__image img {
+  -webkit-transition: transform 0.2s ease-in-out;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
 }
+
 .our-fleet__image:hover img,
 .our-fleet__image:hover::before {
   -webkit-transform: scale(1.1);
