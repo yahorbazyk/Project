@@ -129,7 +129,7 @@ window.addEventListener('resize', function () {
 });
 
 const destroyServicesSlider = () => {
-  if (window.innerWidth <= 479.98 && !servicesSlider?.destroyed) {
+  if (window.innerWidth <= 479.98 && !!servicesSlider?.destroyed) {
     servicesSlider.destroy();
   } else {
     if (document.querySelector('.services-slider')) {
