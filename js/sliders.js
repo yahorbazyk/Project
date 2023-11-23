@@ -52,12 +52,16 @@ const servicesSliderOptions = {
   slidesPerView: 2.2,
   spaceBetween: 10,
   breakpoints: {
-    320: {
+    220: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    425: {
+    490: {
       slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+    550: {
+      slidesPerView: 1.8,
       spaceBetween: 20,
     },
     768: {
