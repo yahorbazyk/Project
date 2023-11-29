@@ -503,6 +503,10 @@ main {
   grid-row: 1/4;
 }
 
+.hero__content {
+  flex-basis: 350%;
+}
+
 .about-us__text,
 .hero__contacts,
 .hero__requisites,
@@ -2416,7 +2420,7 @@ main {
     top: 43%;
   }
 
-  .services-slider__wrapper{
+  .services-slider__wrapper {
     gap: unset;
   }
 
