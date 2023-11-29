@@ -118,18 +118,18 @@ const hidePagination = () => {
 const initSliders = () => {
   mainSlider = new Swiper('.main-slider', mainSliderOptions);
   extendedSlider = new Swiper('.extended-slider', extendedSliderOptions);
-  servicesSlider = new Swiper('.services-slider', servicesSliderOptions);
+  // servicesSlider = new Swiper('.services-slider', servicesSliderOptions);
 
   if (mainSlider?.slides?.length > 0 && extendedSlider?.length > 0) {
     hidePagination();
   }
 
   calcSlideEffect();
-  destroyServicesSlider();
+  // destroyServicesSlider();
 };
 
 window.addEventListener('resize', function () {
-  destroyServicesSlider();
+  // destroyServicesSlider();
 });
 
 const destroyServicesSlider = () => {
